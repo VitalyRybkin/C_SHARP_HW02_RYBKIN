@@ -6,24 +6,8 @@
 918 -> 1
 */
 
-// static int CheckInput (string text) {
-//     int number;
-//     while (true) {
-//         if (text == "Q") Environment.Exit(0);
-//         if (int.TryParse(text, out int num)) {
-//             number = num;
-//             break;
-//             }
-//         else {
-//             Console.WriteLine("This is not an int! ");
-//             Console.Write("Try again or type 'Q': ");
-//             text = Console.ReadLine() ?? "";
-//         }
-//     }   
-// return number;
-// }
 
-//Input checkin func - wether the input too short or not an integer
+//Input checking func - wether the input too short or not an integer
 string CheckInput (string get_string) {
     while (true) {
         if (get_string == "Q") Environment.Exit(0);
