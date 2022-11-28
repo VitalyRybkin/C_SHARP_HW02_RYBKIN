@@ -14,7 +14,7 @@ stopwatch_switch.Start();
 
 Console.Clear();
 
-//Input checking func - wether the input is not an integer
+//Input checking func - wether the input is not a weekday or not a number
 int CheckInput (string get_string) {
     while (true) {
         if (get_string == "Q") Environment.Exit(0);
@@ -30,7 +30,7 @@ int CheckInput (string get_string) {
             }
         }
         else {
-                Console.Write("\nThis is not an int! ");
+                Console.Write("\nThis is not an number! ");
                 Console.Write("Try again or type 'Q': ");              
                 get_string = Console.ReadLine() ?? "";
         }
