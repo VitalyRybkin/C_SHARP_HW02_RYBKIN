@@ -38,14 +38,11 @@ string get_string = CheckInput (text);
 int num = Convert.ToInt32(get_string);
 
 while (num >= 100) num /= 10;
-    int res = num % 10;
-
-Console.Write($"Second digit of you num is {res}");
+Console.Write($"Second digit of you num is {num % 10}");
 
 //STRING VERSION
 Console.WriteLine("\n\nSTRING VERSION...\n");
 Console.Write("Enter a number: ");
 text = Console.ReadLine() ?? "";
 get_string = CheckInput (text);
-res = Convert.ToInt32(get_string[1].ToString());
 Console.WriteLine($"Second digit of you num is {Convert.ToInt32(get_string[1].ToString())}");
